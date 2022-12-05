@@ -1,0 +1,27 @@
+{
+  "title": "User-authorization Schema",
+  "required": ["email", "pwd"],
+  "properties": {
+    "email": {
+      "type": "string",
+      "default": "",
+      "minLength": 6,
+      "maxLength": 255,
+      "title": "Email Address Schema",
+      "examples": ["sample.student4444@stu.kipptexas.org"]
+    },
+    "pwd": {
+      "type": "string",
+      "minLength": 8,
+      "pattern": "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])",
+      "title": "Password Schema",
+      "examples": ["stronkPassword007"]
+    }
+  },
+  "examples": [
+    {
+      "email": "sample.student4444@stu.kipptexas.org",
+      "password": "stronkPassword"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Admin-registered User",
+  "required": ["email", "schoolId", "pwd"],
+  "properties": {
+    "email": {
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 255,
+      "title": "Email Address Schema",
+      "examples": ["sample.student4444@stu.kipptexas.org"]
+    },
+    "schoolId": {
+      "type": "integer",
+      "title": "School ID Schema",
+      "examples": [1]
+    },
+    "pwd": {
+      "type": "string",
+      "minLength": 8,
+      "pattern": "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])",
+      "title": "Password Schema",
+      "examples": ["stronkPassword007"]
+    },
+    "adminAccount": {
+      "type": "boolean",
+      "default": false,
+      "title": "adminAccount Schema",
+      "examples": [true]
+    }
+  },
+  "examples": [
+    {
+      "email": "sample.student4444@stu.kipptexas.org",
+      "schoolId": 1,
+      "pwd": "stronkPassword007",
+      "adminAccount": true,
+      "activeModule": 1
+    }
+  ]
+}

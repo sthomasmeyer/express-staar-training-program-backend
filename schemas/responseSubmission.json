@@ -1,0 +1,69 @@
+{
+  "title": "Response Submission Schema",
+  "required": [
+    "correctResponse",
+    "userResponse",
+    "totalPoints",
+    "pointsEarned",
+    "questionId",
+    "moduleId",
+    "userId"
+  ],
+  "properties": {
+    "correctResponse": {
+      "type": "array",
+      "examples": [
+        [
+          "To acknowledge the importance and the role technology has in our lives",
+          "To reassure the reader that the author is not advising people to stop using technology completely"
+        ]
+      ]
+    },
+    "userResponse": {
+      "type": "array",
+      "examples": [
+        [
+          "To acknowledge the importance and the role technology has in our lives",
+          "To reassure the reader that the author is not advising people to stop using technology completely"
+        ]
+      ]
+    },
+    "totalPoints": {
+      "type": "integer",
+      "examples": 1
+    },
+    "pointsEarned": {
+      "type": "integer",
+      "examples": 1
+    },
+    "questionId": {
+      "type": "integer",
+      "examples": [1]
+    },
+    "moduleId": {
+      "type": "integer",
+      "examples": [1]
+    },
+    "userId": {
+      "type": "integer",
+      "examples": [1]
+    }
+  },
+  "examples": [
+    {
+      "correctResponse": [
+        "To acknowledge the importance and the role technology has in our lives",
+        "To reassure the reader that the author is not advising people to stop using technology completely"
+      ],
+      "userResponse": [
+        "To acknowledge the importance and the role technology has in our lives",
+        "To reassure the reader that the author is not advising people to stop using technology completely"
+      ],
+      "totalPoints": 1,
+      "pointsEarned": 1,
+      "questionId": 1,
+      "moduleId": 1,
+      "userId": 1
+    }
+  ]
+}

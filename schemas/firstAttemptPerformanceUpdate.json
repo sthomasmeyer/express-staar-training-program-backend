@@ -1,0 +1,22 @@
+{
+  "title": "First-attempt Performance Update Schema",
+  "required": ["firstAttempt", "bestOverall", "moduleId", "userId"],
+  "properties": {
+    "firstAttempt": {
+      "type": "number",
+      "examples": [0.8]
+    },
+    "bestOverall": {
+      "type": "number",
+      "examples": [0.8]
+    },
+    "moduleId": {
+      "type": "integer",
+      "examples": [1]
+    },
+    "userId": {
+      "type": "integer",
+      "examples": [1]
+    }
+  }
+}
