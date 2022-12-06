@@ -25,12 +25,24 @@ In Version 1.0.0, the database was designed to store information about schools, 
 
 #### 2) Testing w/ Jest
 
-In Version 1.0.0 there are 16 test suites and 45 total tests. The command to run them effectively is [**npm test**] which executes [**jest --runInBand**]
+In Version 1.0.0 there are 16 test suites and 45 total tests. The command to run them effectively is [**npm test**] which executes [**jest --runInBand**].
 
-#### 3) Set-up a Local Database for Development
+#### 3) Set-up a Local Database for Development && Make Contributions to this Project
 
 1. [Download PostgreSQL](https://www.postgresql.org/download/)
 
-2. Fork this repository
+2. [Download Node.js](https://nodejs.org/en/download/)
 
-3.
+3. **Fork this repository:** Click the fork button on the top of this page. This will create a copy of this repository in your account.
+
+4. **Clone the forked repository:** Go to your GitHub account, open the forked repository, click on the code button, and click _copy to clipboard_. Then, open a terminal and run this git command: [git clone "insert copied url here"]
+
+5. **Create a branch:** Navigate to the repository directory on your computer (if you're not there already). Create a branch using the [git switch] command. For example: [git switch -c new-branch-name]
+
+6. **Make desired changes.**
+
+7. **Commit changes:** Use the [git commit] command. For example: [git commit -m 'added another module to the db-seed.sql file']
+
+8. **Push changes to GitHub.**
+
+9. **Submit changes for review:** Go to your repository on GitHub, and click the "compare & pull request" button. Give your request a succint, informative title. Provide a brief explanation of the proposed changes, and click the "create pull request" button.
